@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c7576bc6f6b049d850f5f610f28d7c6d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c7576bc6f6b049d850f5f610f28d7c6d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c7576bc6f6b049d850f5f610f28d7c6d = L.map(
+                "map_c7576bc6f6b049d850f5f610f28d7c6d",
+                {
+                    center: [14.5, 120.98],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f611732ef41f4b3c0d1dc070a0a4212 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png",
+                {"attribution": "CartoDB", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6f611732ef41f4b3c0d1dc070a0a4212.addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var polygon_6d120f779e677a01a5a34c13e39e533b = L.polygon(
+                [[5.0, 115.0], [15.0, 115.0], [21.0, 120.0], [25.0, 120.0], [25.0, 135.0], [5.0, 135.0]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var marker_34802e866ac8137eb36177f4bc84100f = L.marker(
+                [21.1, 121.94],
+                {}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var div_icon_44f171a39c38ac330b318375015c4fc1 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"display: inline-block; background-color: blue; opacity: 1; padding: 5px 10px; border-radius: 5px; text-align: center; color: white; white-space: nowrap;\"\u003e\n                    \u003cspan style=\"font-size: 12px;\"\u003eNAVAL DETACHMENT, MAVUDIS ISLAND\u003c/span\u003e\u003cbr\u003e\n                    \u003cspan style=\"font-size: 10px;\"\u003eCPA: 173.42 km (20.50, 120.40) Bearing: 247.10\u00b0 Time: 011520H Oct 24\u003c/span\u003e\n                \u003c/div\u003e\n            "});
+            marker_34802e866ac8137eb36177f4bc84100f.setIcon(div_icon_44f171a39c38ac330b318375015c4fc1);
+        
+    
+            var poly_line_23ae1d81adc7b6e8764f0f3f40608a90 = L.polyline(
+                [[20.5, 120.40000000000002], [21.1, 121.94]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var circle_marker_642e6df64cb1c95843591562f3c46ff8 = L.circleMarker(
+                [20.5, 120.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var marker_b1b3fb6ea24d97e79e021e7834bc360c = L.marker(
+                [20.625, 120.525],
+                {}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var div_icon_800f4f0d4d0858bec8ad45f54a067e40 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    display: inline-block; \n                    background-color: white; \n                    opacity: 0.8; \n                    padding: 5px 10px; \n                    border-radius: 5px; \n                    color: black; \n                    white-space: nowrap;\n                    text-align: center;\n                    box-shadow: 0px 0px 5px #000;\"\u003e\n                    \u003cspan style=\"font-size: 14px;\"\u003eDOST-PAGASA Track Initial Position\n: 20.50, 120.40\u003c/span\u003e\n                \u003c/div\u003e\n            "});
+            marker_b1b3fb6ea24d97e79e021e7834bc360c.setIcon(div_icon_800f4f0d4d0858bec8ad45f54a067e40);
+        
+    
+            var poly_line_faf087f1d3ad0605cd3b0a73b14e8997 = L.polyline(
+                [[20.5, 120.4], [20.625, 120.525]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var circle_marker_e8808d7fa473063adf8553ddeed66960 = L.circleMarker(
+                [20.9, 119.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var marker_c84ac37410714e8bc08baa73aa262d77 = L.marker(
+                [21.025, 119.825],
+                {}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var div_icon_490bcad136bfb322faa23fadd7d4238d = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    display: inline-block; \n                    background-color: white; \n                    opacity: 0.8; \n                    padding: 5px 10px; \n                    border-radius: 5px; \n                    color: black; \n                    white-space: nowrap;\n                    text-align: center;\n                    box-shadow: 0px 0px 5px #000;\"\u003e\n                    \u003cspan style=\"font-size: 14px;\"\u003eDOST-PAGASA Track 12-Hour Forecast\n: 20.90, 119.70\u003c/span\u003e\n                \u003c/div\u003e\n            "});
+            marker_c84ac37410714e8bc08baa73aa262d77.setIcon(div_icon_490bcad136bfb322faa23fadd7d4238d);
+        
+    
+            var poly_line_c2f7c815370e7dc12e468613f5764751 = L.polyline(
+                [[20.9, 119.7], [21.025, 119.825]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var circle_marker_564a201ad5ef90cf420d4ceb018868b4 = L.circleMarker(
+                [22.4, 119.6],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var marker_1775199419f92a8267248911fb04b4e6 = L.marker(
+                [22.525, 119.725],
+                {}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var div_icon_c4b21e8a489099c076419e74b27b19b0 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    display: inline-block; \n                    background-color: white; \n                    opacity: 0.8; \n                    padding: 5px 10px; \n                    border-radius: 5px; \n                    color: black; \n                    white-space: nowrap;\n                    text-align: center;\n                    box-shadow: 0px 0px 5px #000;\"\u003e\n                    \u003cspan style=\"font-size: 14px;\"\u003eDOST-PAGASA Track 24-Hour Forecast\n: 22.40, 119.60\u003c/span\u003e\n                \u003c/div\u003e\n            "});
+            marker_1775199419f92a8267248911fb04b4e6.setIcon(div_icon_c4b21e8a489099c076419e74b27b19b0);
+        
+    
+            var poly_line_33a0a630df0ebdb71ee3ebf7d8ed3377 = L.polyline(
+                [[22.4, 119.6], [22.525, 119.725]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var circle_marker_7e881266caa75aee4b2da189788f68b0 = L.circleMarker(
+                [22.4, 119.9],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var marker_afe04601de583041f7a3829f747b303f = L.marker(
+                [22.525, 120.025],
+                {}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var div_icon_04682523901b6f2ad001f306284bb6b0 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    display: inline-block; \n                    background-color: white; \n                    opacity: 0.8; \n                    padding: 5px 10px; \n                    border-radius: 5px; \n                    color: black; \n                    white-space: nowrap;\n                    text-align: center;\n                    box-shadow: 0px 0px 5px #000;\"\u003e\n                    \u003cspan style=\"font-size: 14px;\"\u003eDOST-PAGASA Track 36-Hour Forecast\n: 22.40, 119.90\u003c/span\u003e\n                \u003c/div\u003e\n            "});
+            marker_afe04601de583041f7a3829f747b303f.setIcon(div_icon_04682523901b6f2ad001f306284bb6b0);
+        
+    
+            var poly_line_a7c49bb6b955ea95d844718b3662ad96 = L.polyline(
+                [[22.4, 119.9], [22.525, 120.025]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var circle_marker_8653370529a2a6703304f44de4e6dc6c = L.circleMarker(
+                [23.1, 121.1],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var marker_352e5557210d071d8a97c65f57597ce5 = L.marker(
+                [23.225, 121.225],
+                {}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var div_icon_c8f3590d83e4ac75977441076451b266 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    display: inline-block; \n                    background-color: white; \n                    opacity: 0.8; \n                    padding: 5px 10px; \n                    border-radius: 5px; \n                    color: black; \n                    white-space: nowrap;\n                    text-align: center;\n                    box-shadow: 0px 0px 5px #000;\"\u003e\n                    \u003cspan style=\"font-size: 14px;\"\u003eDOST-PAGASA Track 48-Hour Forecast\n: 23.10, 121.10\u003c/span\u003e\n                \u003c/div\u003e\n            "});
+            marker_352e5557210d071d8a97c65f57597ce5.setIcon(div_icon_c8f3590d83e4ac75977441076451b266);
+        
+    
+            var poly_line_23e793737e106e0ff3a72b3ec5ff0e6c = L.polyline(
+                [[23.1, 121.1], [23.225, 121.225]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var circle_marker_9ac3a85a1e9d777ea071bc9c290f49dd = L.circleMarker(
+                [24.3, 122.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var marker_004722b2ddf6c44d6a21bd98dd2120e9 = L.marker(
+                [24.425, 122.525],
+                {}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var div_icon_848045eabc9e89e9ee8a65095c4dd25e = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    display: inline-block; \n                    background-color: white; \n                    opacity: 0.8; \n                    padding: 5px 10px; \n                    border-radius: 5px; \n                    color: black; \n                    white-space: nowrap;\n                    text-align: center;\n                    box-shadow: 0px 0px 5px #000;\"\u003e\n                    \u003cspan style=\"font-size: 14px;\"\u003eDOST-PAGASA Track 60-Hour Forecast\n: 24.30, 122.40\u003c/span\u003e\n                \u003c/div\u003e\n            "});
+            marker_004722b2ddf6c44d6a21bd98dd2120e9.setIcon(div_icon_848045eabc9e89e9ee8a65095c4dd25e);
+        
+    
+            var poly_line_1b412688cb5be94c6b7c53cc02ccf1d0 = L.polyline(
+                [[24.3, 122.4], [24.425, 122.525]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var circle_marker_b455a5f5ff1837e7cd930cbee642f7f5 = L.circleMarker(
+                [25.9, 124.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var marker_c1f5cc2716fbe535ed39dd2de7c1eddb = L.marker(
+                [26.025, 124.125],
+                {}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var div_icon_924b67e3bf3da5833d80fae088384696 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    display: inline-block; \n                    background-color: white; \n                    opacity: 0.8; \n                    padding: 5px 10px; \n                    border-radius: 5px; \n                    color: black; \n                    white-space: nowrap;\n                    text-align: center;\n                    box-shadow: 0px 0px 5px #000;\"\u003e\n                    \u003cspan style=\"font-size: 14px;\"\u003eDOST-PAGASA Track 72-Hour Forecast\n: 25.90, 124.00\u003c/span\u003e\n                \u003c/div\u003e\n            "});
+            marker_c1f5cc2716fbe535ed39dd2de7c1eddb.setIcon(div_icon_924b67e3bf3da5833d80fae088384696);
+        
+    
+            var poly_line_daa95bf95b2dabcb4132df60bd477e23 = L.polyline(
+                [[25.9, 124.0], [26.025, 124.125]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var circle_marker_90331e00b51de845e000bda31b049270 = L.circleMarker(
+                [29.6, 125.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var marker_495415c58fe31de98881814e4a5f7a93 = L.marker(
+                [29.725, 125.825],
+                {}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var div_icon_7f8dc568567c7f771912046ca3d94972 = L.divIcon({"className": "empty", "html": "\n                \u003cdiv style=\"\n                    display: inline-block; \n                    background-color: white; \n                    opacity: 0.8; \n                    padding: 5px 10px; \n                    border-radius: 5px; \n                    color: black; \n                    white-space: nowrap;\n                    text-align: center;\n                    box-shadow: 0px 0px 5px #000;\"\u003e\n                    \u003cspan style=\"font-size: 14px;\"\u003eDOST-PAGASA Track 96-Hour Forecast\n: 29.60, 125.70\u003c/span\u003e\n                \u003c/div\u003e\n            "});
+            marker_495415c58fe31de98881814e4a5f7a93.setIcon(div_icon_7f8dc568567c7f771912046ca3d94972);
+        
+    
+            var poly_line_cd0be6201d3dfa2f9675f551ceb26749 = L.polyline(
+                [[29.6, 125.7], [29.725, 125.825]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+    
+            var poly_line_a174b9698d32352f8c5ae4ed319a5a53 = L.polyline(
+                [[20.5, 120.4], [20.9, 119.7], [22.4, 119.6], [22.4, 119.9], [23.1, 121.1], [24.3, 122.4], [25.9, 124.0], [29.6, 125.7]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_c7576bc6f6b049d850f5f610f28d7c6d);
+        
+</script>
+</html>
